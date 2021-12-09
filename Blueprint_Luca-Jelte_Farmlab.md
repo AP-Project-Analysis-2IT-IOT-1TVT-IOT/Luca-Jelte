@@ -93,7 +93,7 @@ Via standardisatie kan men alle onderdelen makkelijk namaken om kopieën van de 
 
 
 
-### Projectdefinitie
+## Projectdefinitie
 ### Planning
 - Wekelijks resultaten leveren
 - Elke donderdag samen 3 uur werken
@@ -118,7 +118,7 @@ Via standardisatie kan men alle onderdelen makkelijk namaken om kopieën van de 
 | kast kabelmanagement| 2de semester      |TBD|
 | kast uittesten voor een maand| 2de semester      |TBD|
 
-### Functioneel design
+## Functioneel design
 <ul>
   <li>Pomp controller</li>
       De pomp controller moet in staat zijn om het water op het gepaste moment rond te pompen. Hierdoor kunnen er geen algen of andere planten in het water groeien doordat het water te lang heeft stil gestaan. Dit proces moet automatisch gebeuren zodat de gebruiker niet om de zoveel tijd manueel de pomp moet aanzetten. Daarnaast is er nog een tweede pomp om de voedingsstoffen toe te voegen aan het water zodat de planten optimaal kunnen groeien. Ook deze wordt geautomatiseerd en remote aanpasbaar zodat de hoeveelheden voedingstoffen kunnen worden aangepast indien nodig. Tot nu toe werd er gewerkt met een pomp die manueel werd aangestuurd en zitten ze in het proces om te kijken of al de buizen waterdicht zijn. 
@@ -137,29 +137,29 @@ Via standardisatie kan men alle onderdelen makkelijk namaken om kopieën van de 
 Deze onderdelen worden in het technisch design verder uitgepunt.
 
 
-### Technisch design
+## Technisch design
 
-### Smart Object (Hardware Analyse)
-## Kast
+## Smart Object (Hardware Analyse)
+### Kast
 ![image](https://user-images.githubusercontent.com/91600019/144228425-952029da-4239-4ce4-bf58-538cb70fdf7a.png)
-## Ontwerp kast
+### Ontwerp kast
 ![image](https://user-images.githubusercontent.com/91600019/144228812-acda100e-8fd4-431b-b07b-b1d94918728a.png)
 
 *documentatie ontwerp: https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/kast*
 
-## Buis Support versie 3
+### Buis Support versie 3
 V3 is momenteel het finale design van onze supports. Na het monteren van de V2's zijn we op enkele problemen gestoten tijdens het monteren van de supports en de buizen. De volgende 2 aanpassingen zorgen ervoor dat de montage makkelijker gaat. Zoals bij V2 word V3 ook verticaal geprint en is er nood aan supports.
 - De verbreding van de poten aan de onderkant zorgen ervoor dat tijdens het monteren van de supports aan het hout met vijzen deze makkelijker bereikbaar zijn.
 - De toevoeging van uitsparingen voor M4 moeren in het onderste gedeelte zorgen ervoor dat de moeren in de print vastgezet kunnen worden.
 
 *van: https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen*
 
-# buis support top
+### buis support top
 ![image](https://user-images.githubusercontent.com/91600019/144415593-ff1d9519-1c01-4641-bc63-75d436ce7a8c.png)
-# buis support bottom
+### buis support bottom
 ![image](https://user-images.githubusercontent.com/91600019/144415648-35df6548-4976-4d9e-8b02-2e6f26a9a01a.png)
 
-## Groeibakje V4
+### Groeibakje V4
 Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor de groeibakjes. De afmetingen voor de basis en gaten blijven hetzelfde, alleen de opbouw is wat anders. Het model gaat eerste paar 16mm naar boven en dan pas begint die schuin te gaan tot de bovenste offset-plane. Vandaar gaat het schuin zodat de planten hun wortels rechtstreeks in het water groeien. De techniek hiervoor is van een cirkel naar een vierkant die bij een schuine offset plane gemaakt is geweest een daarna loft te gebruiken om ze bij elkaar te verbinden. 
 
 *van: https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen*
@@ -173,11 +173,11 @@ Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor d
 | breedte buitenste diameter: 65mm| breedte diameter2: 40mm      |
 || de dikte van de binnenkant: 0.5mm      |
 
-## Opsplitsen PCB's
-# Blokdiagram 
+### Opsplitsen PCB's
+### Blokdiagram 
 ![image](https://ap-it-gh.github.io/ssys21-docs-labfarm/Images/BlokdiagramNEW.jpg)
 
-## Hardware keuze
+### Hardware keuze
 | naam        |voltage(v)   |Stroom(A)   |
 | ----------- | ----------- |----------- |
 | Pomp|5|0,9-1,7|
@@ -186,7 +186,7 @@ Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor d
 | Stepper Motor driver|12-24|2,5(MAX)|
 | Led strip|12|400mA|
 
-## Comunicatie keuze
+### Comunicatie keuze
 
 **Mogelijkheden:**
 | Type        |voordelen   |nadelen   |
@@ -201,7 +201,7 @@ Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor d
 - Draadloze communicatie gaan we gebruiken voor het grootste deel van het project, het geeft ons de meeste uitbreidmogelijkheden en zorgt dat alles overzichtelijk blijft.
 Verder hebben we gekozen voor WIFI. Deze biedt de meest betrouwbare communicatie voor meer dan 12 devices. Aangezien we volgens een main controller / node systeem willen werken is dit essentieel.
 
-## Keuze voeding
+### Keuze voeding
 
 **Mogelijkheden:**
 | Type        |voordelen   |nadelen   |
@@ -213,7 +213,7 @@ Verder hebben we gekozen voor WIFI. Deze biedt de meest betrouwbare communicatie
 
 We gaan voor 'the best of both worlds'. Dit houdt in dat we elke controller zo draadloos mogelijk willen bouwen, dus met behulp van batterijen. We voorzien wel steeds een backup aansluiting voor bekabelde voeding.
 
-## Batterij keuze
+### Batterij keuze
 
 **Mogelijkheden:**
 | Type        |Voltage|Max stroom|voordelen   |nadelen   |
@@ -226,20 +226,20 @@ We gaan voor 'the best of both worlds'. Dit houdt in dat we elke controller zo d
 Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebben we gekozen voor de Lithium Ion batterij. Deze zouden we ook zonder houder kunnen bevestigen aan de PCB. De 18650 batterijen daarentegen nemen onnodig veel plek in.
 
 
-## Analyse LEDController
+### Analyse LEDController
 
-# Blokdiagram
+### Blokdiagram
 
 ![Blokdiagram LEDController](https://ap-it-gh.github.io/ssys21-docs-labfarm/Images/Blokdiagram_LED_Controller.jpg)
 
 
-## Analyse Licht Sensor
+### Analyse Licht Sensor
 
-# Blokdiagram
+### Blokdiagram
 
 ![Blokdiagram LightSensorController](https://ap-it-gh.github.io/ssys21-docs-labfarm/Images/Blokdiagram_Licht_Sensor.jpg)
 
-# Component keuze
+### Component keuze
 
 **Mogelijkheden:**
 | naam        |Min dynamic range (Lux)|Max dynamic range (Lux)|Voeding   |Interface 	   |Prijs|
@@ -252,20 +252,20 @@ Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebb
 De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 
 
-## Analyse PompController
+### Analyse PompController
 
-# Blokdiagram
+### Blokdiagram
 
 ![Blokdiagram PompController](https://ap-it-gh.github.io/ssys21-docs-labfarm/Images/Blokdiagram_Pomp_Controller.jpg)
 
 
-## Analyse Temperatuursensor
+### Analyse Temperatuursensor
 
-# Blokdiagram
+### Blokdiagram
 
 ![Blokdiagram TemperatuurSensor](https://ap-it-gh.github.io/ssys21-docs-labfarm/Images/Blokdiagram_Temperatuur_Sensor.jpg)
 
-# Component keuze
+### Component keuze
 
 **Mogelijkheden:**
 | naam |min temp (°C)|max temp (°C)|accuraatheid (°C)|min voltage (V)| min voltage (V) |mounting|soort|Prijs|
@@ -280,11 +280,11 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangrijkste eisen. Voldoende range van meetbare temperaturen en minder dan 1°C accuraatheid. Extra accuraatheid zouden we kunnen bekomen met de 'SHT31-DIS-B', deze kunnen we echter in de beginfases niet gebruiken omdat deze enkel met SMD reflow op een PCB geplaatst kan worden. Deze methode is vrij duur omdat deze stencils nodig heeft en dit niet ideaal is in de test/ontwerp fase. 
 
 
-## Analyse WaterSensor
+### Analyse WaterSensor
 
 
-### Smart Object (Software Analyse)
-## Data
+## Smart Object (Software Analyse)
+### Data
 
 Data wordt grotendeels verstuurd tussen de centrale RaspberryPi (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's.
 Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
@@ -319,11 +319,11 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
   </ul>
 </ol>
 
-# Flowchart
+### Flowchart
   
   ![image](https://ap-it-gh.github.io/ssys21-docs-labfarm/Images/MQTTDiagram.jpg)
 
-# Specificaties
+### Specificaties
 
 | HTTP        |MQTT   |
 | ----------- | ----------- |
@@ -335,7 +335,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 
 => Wij gaan gebruik maken van MQTT omdat dit protocol gemaakt is om kleinere bytes aan data door te sturen en dit makkelijk te implementeren is in onze opstelling.
 
-# IOT Dashboard/Platform
+### IOT Dashboard/Platform
 
 **We hebben een platform nodig om:**
 
