@@ -74,7 +74,7 @@ In grote lijnen wilt men versie 3 van het Farmlab:
 
 In iteratie vier legt men de probleemstellingen van versie vier bloot om ze verder te verwerken. Dit houdt in dat de verschillende onderdelen waaruit de kast is opgebouwd verder worden verfijnd en geoptimaliseerd. Zo kan de kast voor een periode van 1 maand zelfstandig werken met remote besturing. 
 
-De vijf onderdelen zijn: 
+De drie onderdelen zijn: 
 <ul>
   <li>Pomp controller</li>
   De pomp controller moet in staat zijn om het water op het gepaste moment rond te pompen. Zo vermijd men dat er algen of andere planten in het water groeien. Dit proces moet     geautomatiseerd worden om te vermijden dat de gebruiker de pomp manueel moet aanzetten.
