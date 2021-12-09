@@ -91,7 +91,6 @@ Via standardisatie kan men alle onderdelen makkelijk namaken om kopieën van de 
 
 ### Projectdefinitie
 ## Planning
-- Kanban
 - Wekelijks resultaten leveren
 - Elke donderdag samen 3 uur werken
 - Doorheen de week individueel werken
