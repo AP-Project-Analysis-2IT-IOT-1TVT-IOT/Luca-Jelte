@@ -356,7 +356,9 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
 ## Beschrijving van de mogelijke interfaces
 ## Beschrijving van eventuele datamigratie
 ![image](https://raw.githubusercontent.com/AP-Project-Analysis-2IT-IOT-1TVT-IOT/Luca-Jelte/main/BlokDiagrammen/dataflow.drawio.png)
-In onze dataflow diagram zien we de data de de Raspberry Pi verstuurd en aankrijgt. De data van de lichtsensoren wordt uitgelezen, de data wordt dan verstuurd als een string naar de Pi. Dit wordt dan ook toegepast voor de "Water related" sensoren. De camera neemt periodiek een foto en die wordt dan ingelezen door de Pi. De stappenmoteren, pompen en LEDs worden ook op dezelfde manier aangestuurd. De Pi stuurt de nodige data voor hun aan te sturen.
+
+In bovenstaand dataflow diagram zien we de datamigratie van de Raspberry Pi tussen alle subsystemen. De lichtsensoren meten een bepaald aantal lux en het LED controller system verstuurt dit als string. De "water related" sensoren zijn PH, temperatuur en water level. De camera neemt periodiek een aantal foto's die naar het NodeRED systeem worden doorgestuurd. De LEDs worden aangestuurd met simpele on/off signalen naar het betreffende level. De stappenmotoren krijgen een bestemming aan. De Pi stuurt de nodige data om alles aan te sturen.
+
 ## Beschrijving van eventuele impact op de huidige infrastructuur
 ## Analyse van security en eventuele autorisatierollen
 ## Documentatie
