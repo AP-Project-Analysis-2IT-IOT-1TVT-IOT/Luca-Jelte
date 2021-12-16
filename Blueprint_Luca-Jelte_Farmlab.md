@@ -105,6 +105,10 @@ Via standardisatie kan men alle onderdelen makkelijk namaken om kopieën van de 
 | ----------- | ----------- |----------- |
 | Opmaak blueprint| 2 Dec       |Luca Van Laer|
 | As is / To be| 2 Dec      |Jelte Boumans|
+| DFD opstellen| 14 Dec |Jelte Boumans|
+| Blokschema opstellen| 15 Dec |Luca Van Laer|
+| Beschrijving DFD gemaakt| 16 Dec |Jelte Boumans & Luca Van Laer|
+| Interfaces, infrastructuur impact, security analyse, docs, bronnen| 17 Dec |Jelte Boumans & Luca Van Laer|
 
 ### Planning uitvoering (2de semester)
 | Hoofdlijnen |  Datum      | Student    |
