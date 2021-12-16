@@ -65,8 +65,8 @@ In grote lijnen wilt men versie 3 van het Farmlab:
 - Gebruiksvriendelijker maken
 - Automatiseren
 
-*Tekst uit https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Probleemstelling?id=deelproblemen*<br>
-*Tekst uit https://ap-it-gh.github.io/ssys21-docs-labfarm/#/README*
+*van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Probleemstelling?id=deelproblemen*<br>
+*van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/README*
 
 
 
@@ -98,7 +98,7 @@ Via standardisatie kan men alle onderdelen makkelijk namaken om kopieën van de 
 - Wekelijks resultaten leveren
 - Elke donderdag samen 3 uur werken
 - Doorheen de week individueel werken
-- Tools: Office Word, Github
+- Tools: Github
 
 
 | Hoofdlijnen |  Datum      | Student    |
@@ -178,7 +178,7 @@ Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor d
 ![image](https://raw.githubusercontent.com/AP-Project-Analysis-2IT-IOT-1TVT-IOT/Luca-Jelte/main/BlokDiagrammen/blokdiagram_farmlab.drawio.png)
 
 ### Hardware keuze
-| naam        |voltage(v)   |Stroom(A)   |
+| Naam        |Spanning (V)   |Stroom (A)   |
 | ----------- | ----------- |----------- |
 | Pomp|5|0,9-1,7|
 | Raspbery Pi|5|600mA-1,2|
@@ -189,7 +189,7 @@ Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor d
 ### Comunicatie keuze
 
 **Mogelijkheden:**
-| Type        |voordelen   |nadelen   |
+| Type        |Voordelen   |Nadelen   |
 | ----------- | ----------- |----------- |
 | Wifi|-groot bereik<br>-makkelijk uitbreidbaar<br>-middelmatige afstand<br>-snel<br>-security instelbaar<br>-connectie naar Raspberry pi server mogelijk |-verbruikt relatief veel energie|
 |Bluetooth|-makkelijk<br>-relatief zuinig|-korte afstand<br>-traag<br>-geen security<br>-ondersteund weinig apparaten (max 8)|
@@ -204,7 +204,7 @@ Verder hebben we gekozen voor WIFI. Deze biedt de meest betrouwbare communicatie
 ### Keuze voeding
 
 **Mogelijkheden:**
-| Type        |voordelen   |nadelen   |
+| Type        |Voordelen   |Vadelen   |
 | ----------- | ----------- |----------- |
 | Batterij |-draadloos/ordelijk |-moeten opgeladen worden|
 | Bedrade voeding | -makkelijk |-meer bekabeling in de kast|
@@ -216,7 +216,7 @@ We gaan voor 'the best of both worlds'. Dit houdt in dat we elke controller zo d
 ### Batterij keuze
 
 **Mogelijkheden:**
-| Type        |Voltage|Max stroom|voordelen   |nadelen   |
+| Type        |Spanning|Max stroom|Voordelen   |Nadelen   |
 | ----------- | ----------- |----------- |----------- |----------- |
 | 18650 | 4,2 |4 |-makkelijk<br>-hoge stroom|groot - moet in houder|
 | Lithium Ion batterij (PRT-13854 ROHS) | 3,7 |2,5|-klein/plat<br>-geen houder nodig<br>-voltage dicht bij ESP input voltage|- minder capaciteit|
@@ -268,7 +268,7 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 ### Component keuze
 
 **Mogelijkheden:**
-| naam |min temp (°C)|max temp (°C)|accuraatheid (°C)|min voltage (V)| min voltage (V) |mounting|soort|Prijs|
+| Naam |Min temp (°C)|Max temp (°C)|Accuraatheid (°C)|Min spanning (V)| Min voltage (V) |Mounting|Soort|Prijs|
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | dht11 | 0 | 50 | 2 | 3 | 5 | thru hole | packet | 2,45 |
 | dht22 | -4 | 80 | 0.5 | 3 | 5 | thru hole | packet | 9,95 |
@@ -314,7 +314,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
     <ul>
       <li>Topics: farm/x/pomp/water OF farm/x/pomp/nutrients</li>
       <li>Topics: farm/x/lichtsensor/level/y => y = level 1,2 OF 3</li>
-      <li>r worden Strings gestuurd die het aantal lux doorgeeft dat de sensor meet</li>
+      <li>Er worden Strings gestuurd die het aantal lux doorgeeft dat de sensor meet</li>
     </ul>
   </ul>
 </ol>
