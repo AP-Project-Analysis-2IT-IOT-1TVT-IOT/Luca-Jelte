@@ -154,9 +154,9 @@ V3 is momenteel het finale design van onze supports. Na het monteren van de V2's
 
 *van: https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen*
 
-### buis support top
+### Buis support top
 ![image](https://user-images.githubusercontent.com/91600019/144415593-ff1d9519-1c01-4641-bc63-75d436ce7a8c.png)
-### buis support bottom
+### Buis support bottom
 ![image](https://user-images.githubusercontent.com/91600019/144415648-35df6548-4976-4d9e-8b02-2e6f26a9a01a.png)
 
 ### Groeibakje V4
@@ -175,7 +175,7 @@ Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor d
 
 ### Opsplitsen PCB's
 ### Blokdiagram 
-![image](https://ap-it-gh.github.io/ssys21-docs-labfarm/Images/BlokdiagramNEW.jpg)
+![image](https://raw.githubusercontent.com/AP-Project-Analysis-2IT-IOT-1TVT-IOT/Luca-Jelte/main/BlokDiagrammen/blokdiagram_farmlab.drawio.png)
 
 ### Hardware keuze
 | naam        |voltage(v)   |Stroom(A)   |
