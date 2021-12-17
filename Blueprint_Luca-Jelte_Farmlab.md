@@ -140,7 +140,7 @@ Deze onderdelen worden in het technisch design verder uitgepunt.
 
 ## Technisch design
 
-## Smart Object (Hardware Analyse)
+### Smart Object (Hardware Analyse)
 ### Kast
 ![image](https://user-images.githubusercontent.com/91600019/144228425-952029da-4239-4ce4-bf58-538cb70fdf7a.png)
 ### Ontwerp kast
