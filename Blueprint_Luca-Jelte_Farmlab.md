@@ -83,9 +83,9 @@ De vijf onderdelen zijn:
   <li>XY-Systeem</li>
   Het XY-systeem bevindt zich aan de achterkant van de kast. Dit systeem kan aan de hand van een camera en AI image processing herkennen in welk groeistadium een plant is.         Optioneel kan deze plant ook worden geoogstd. Met deze informatie kan men de pomp aansturen of de belichting aanpassen. Momenteel is het XY-systeem op de kast gemonteerd en     kan het bewegen binnen het XY-vlak. Er is een camera aanwezig maar geen AI systeem.
   <li>Temperatuursensor</li>
-  // uitleg hier
+  Er zijn temperatuursensoren gemonteerd om de omgevingstemperatuur te meten. Zo kan men de temperatuur van de kamer waar de kast zich bevindt monitoren. Daarmee kan   de gebruiker bijvoorbeeld gewaarschuwd worden over een te lage temperatuur.
   <li>Watersensor</li>
-  // uitleg hier
+  Met de sensoren in de watertank kan men de PH waarde en het waterniveau meten. De gebruiker blifjt dan op de hoogte van de PH waarde van het water en kan dit         bijvullen indien nodig.
 </ul>  
 
 Van de vijf onderdelen moeten de PCBs herwerkt worden. Deze moeten gebruik maken van ESP32 in de plaats van ESP12. Het management van kabels moet worden herbekeken en verbeterd. 
@@ -113,14 +113,14 @@ Via standardisatie kan men alle onderdelen makkelijk namaken om kopieën van de 
 ### Planning uitvoering (2de semester)
 | Hoofdlijnen |  Datum      | Student    |
 | ----------- | ----------- |----------- |
-| aanpassen PCB Ledcontroller| 2de semester       |TBD|
-| aanpassen PCB lichtsensor| 2de semester       |TBD|
-| aanpassen PCB temperatuursensor| 2de semester       |TBD|
-| aanpassen PCB watersensor| 2de semester       |TBD|
-| checken pomp controller| 2de semester       |TBD|
-| X-Y syteem| 2de semester      |TBD|
-| kast kabelmanagement| 2de semester      |TBD|
-| kast uittesten voor een maand| 2de semester      |TBD|
+| Aanpassen PCB Ledcontroller| 2de semester       |TBD|
+| Aanpassen PCB lichtsensor| 2de semester       |TBD|
+| Aanpassen PCB temperatuursensor| 2de semester       |TBD|
+| Aanpassen PCB watersensor| 2de semester       |TBD|
+| Checken pomp controller| 2de semester       |TBD|
+| X-Y syteem| 2de semester      |Luca Van Laer & Jelte Boumans|
+| Kast kabelmanagement| 2de semester      |TBD|
+| Kast uittesten voor een maand| 2de semester      |TBD|
 
 ## Functioneel design
 <ul>
@@ -195,23 +195,23 @@ Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor d
 **Mogelijkheden:**
 | Type        |Voordelen   |Nadelen   |
 | ----------- | ----------- |----------- |
-| Wifi|-groot bereik<br>-makkelijk uitbreidbaar<br>-middelmatige afstand<br>-snel<br>-security instelbaar<br>-connectie naar Raspberry pi server mogelijk |-verbruikt relatief veel energie|
-|Bluetooth|-makkelijk<br>-relatief zuinig|-korte afstand<br>-traag<br>-geen security<br>-ondersteund weinig apparaten (max 8)|
-|Bedraad |-Makkelijk op korte afstand<br>-minder kans op externe verstoringen<br>-geen antenne nodig|-niet ideaal voor lange afstand (onoverzichtelijk)<br>-moeilijk uitbreidbaar|
+| Wifi|-Groot bereik<br>-Makkelijk uitbreidbaar<br>-Middelmatige afstand<br>-Snel<br>-Security instelbaar<br>-Connectie naar Raspberry Pi server mogelijk |-Verbruikt relatief veel energie|
+|Bluetooth|-Makkelijk<br>-Relatief zuinig|-Korte afstand<br>-Traag<br>-Geen security<br>-Ondersteund weinig apparaten (max 8)|
+|Bedraad |-Makkelijk op korte afstand<br>-Minder kans op externe verstoringen<br>-Geen antenne nodig|-Niet ideaal voor lange afstand (onoverzichtelijk)<br>-Moeilijk uitbreidbaar|
 
 **Onze keuze:**
 
 - Bedrade communicatie willen we enkel voor zeer korte afstanden gebruiken of indien er geen ander optie is.
 - Draadloze communicatie gaan we gebruiken voor het grootste deel van het project, het geeft ons de meeste uitbreidmogelijkheden en zorgt dat alles overzichtelijk blijft.
-Verder hebben we gekozen voor WIFI. Deze biedt de meest betrouwbare communicatie voor meer dan 12 devices. Aangezien we volgens een main controller / node systeem willen werken is dit essentieel.
+Verder hebben we gekozen voor WiFi. Deze biedt de meest betrouwbare communicatie voor meer dan 12 devices. Aangezien we volgens een main controller / node systeem willen werken is dit essentieel.
 
 ### Keuze voeding
 
 **Mogelijkheden:**
 | Type        |Voordelen   |Vadelen   |
 | ----------- | ----------- |----------- |
-| Batterij |-draadloos/ordelijk |-moeten opgeladen worden|
-| Bedrade voeding | -makkelijk |-meer bekabeling in de kast|
+| Batterij |-Draadloos/ordelijk |-Moeten opgeladen worden|
+| Bedrade voeding | -Makkelijk |-Meer bekabeling in de kast|
 
 **Onze keuze:**
 
@@ -222,8 +222,8 @@ We gaan voor 'the best of both worlds'. Dit houdt in dat we elke controller zo d
 **Mogelijkheden:**
 | Type        |Spanning|Max stroom|Voordelen   |Nadelen   |
 | ----------- | ----------- |----------- |----------- |----------- |
-| 18650 | 4,2 |4 |-makkelijk<br>-hoge stroom|groot - moet in houder|
-| Lithium Ion batterij (PRT-13854 ROHS) | 3,7 |2,5|-klein/plat<br>-geen houder nodig<br>-voltage dicht bij ESP input voltage|- minder capaciteit|
+| 18650 | 4,2 |4 |-Makkelijk<br>-Hoge stroom|Groot - Moet in houder|
+| Lithium Ion batterij (PRT-13854 ROHS) | 3,7 |2,5|-Klein/plat<br>-Geen houder nodig<br>-Voltage dicht bij ESP input voltage|- Minder capaciteit|
 
 **Onze keuze:**
 
@@ -246,7 +246,7 @@ Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebb
 ### Component keuze
 
 **Mogelijkheden:**
-| naam        |Min dynamic range (Lux)|Max dynamic range (Lux)|Voeding   |Interface 	   |Prijs|
+| Naam        |Min dynamic range (Lux)|Max dynamic range (Lux)|Voeding   |Interface 	   |Prijs|
 | ----------- | ----------- |----------- |----------- |----------- |----------- |
 |[lichtweerstand](https://www.kiwi-electronics.nl/nl/lichtgevoelige-weerstand-ldr-416)| 1 |10|1V-200V| Analoog | 1,95€ |
 | [TSL2561](https://www.adafruit.com/product/439) | 0.1 |40000 | 2,7-3,6V | I2C  	|+-5€ |
@@ -274,8 +274,8 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 **Mogelijkheden:**
 | Naam |Min temp (°C)|Max temp (°C)|Accuraatheid (°C)|Min spanning (V)| Min voltage (V) |Mounting|Soort|Prijs|
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| dht11 | 0 | 50 | 2 | 3 | 5 | thru hole | packet | 2,45 |
-| dht22 | -4 | 80 | 0.5 | 3 | 5 | thru hole | packet | 9,95 |
+| DHT11 | 0 | 50 | 2 | 3 | 5 | thru hole | packet | 2,45 |
+| DHT22 | -4 | 80 | 0.5 | 3 | 5 | thru hole | packet | 9,95 |
 | HIH8121-021-001 | -25 | 85 | 0.5 | 2.3 | 5.5 | SMD | apart | 7,78 |
 | HIH6130-021-001 | -40 | 125 | 0.5 | 2.3 | 5.5 | thru hole | apart | 8,41 |
 | SHT31-DIS-B | -40 | 125 | 0.2 | 2.15 | 5.5 | SMD reflow | apart | 4,5 |
@@ -291,7 +291,7 @@ De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangri
 ### Data
 
 Data wordt grotendeels verstuurd tussen de centrale RaspberryPi (broker MQTT en NodeRED) en de ESP32's aanwezig op de PCB's.
-Alle data die tussen deze 2 uitgestuurd worden zullen van het type String zijn.
+Alle data die tussen deze 2 uitgestuurd worden zullen van het type string zijn.
 
 <ol>
   <li>PompController: </li>
