@@ -60,14 +60,11 @@ Momenteel zijn er 3 hoofdproblemen waar men aan werkt:
     <li>Betere koeling voorzien</li>
   </ul>
 </ol>
+[1]
 
 In grote lijnen wilt men versie 3 van het Farmlab:
 - Gebruiksvriendelijker maken
 - Automatiseren
-
-*van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Probleemstelling?id=deelproblemen*<br>
-*van https://ap-it-gh.github.io/ssys21-docs-labfarm/#/README*
-
 
 
 ## Situatie To-Be
@@ -148,15 +145,13 @@ Deze onderdelen worden in het technisch design verder uitgepunt.
 ![image](https://user-images.githubusercontent.com/91600019/144228425-952029da-4239-4ce4-bf58-538cb70fdf7a.png)
 ### Ontwerp kast
 ![image](https://user-images.githubusercontent.com/91600019/144228812-acda100e-8fd4-431b-b07b-b1d94918728a.png)
-
-*documentatie ontwerp: https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/kast*
+[2]
 
 ### Buis Support versie 3
 V3 is momenteel het finale design van onze supports. Na het monteren van de V2's zijn we op enkele problemen gestoten tijdens het monteren van de supports en de buizen. De volgende 2 aanpassingen zorgen ervoor dat de montage makkelijker gaat. Zoals bij V2 word V3 ook verticaal geprint en is er nood aan supports.
 - De verbreding van de poten aan de onderkant zorgen ervoor dat tijdens het monteren van de supports aan het hout met vijzen deze makkelijker bereikbaar zijn.
 - De toevoeging van uitsparingen voor M4 moeren in het onderste gedeelte zorgen ervoor dat de moeren in de print vastgezet kunnen worden.
-
-*van: https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen*
+[3]
 
 ### Buis support top
 ![image](https://user-images.githubusercontent.com/91600019/144415593-ff1d9519-1c01-4641-bc63-75d436ce7a8c.png)
@@ -165,8 +160,7 @@ V3 is momenteel het finale design van onze supports. Na het monteren van de V2's
 
 ### Groeibakje V4
 Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor de groeibakjes. De afmetingen voor de basis en gaten blijven hetzelfde, alleen de opbouw is wat anders. Het model gaat eerste paar 16mm naar boven en dan pas begint die schuin te gaan tot de bovenste offset-plane. Vandaar gaat het schuin zodat de planten hun wortels rechtstreeks in het water groeien. De techniek hiervoor is van een cirkel naar een vierkant die bij een schuine offset plane gemaakt is geweest een daarna loft te gebruiken om ze bij elkaar te verbinden. 
-
-*van: https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen*
+[4]
 
 ![image](https://user-images.githubusercontent.com/91600019/144416435-30955e32-0042-47d6-a0a0-b1ceff3f6622.png)
 
@@ -367,7 +361,50 @@ In bovenstaand dataflow diagram zien we het interface en de flow van data tussen
 
 In bovenstaand dataflow diagram zien we de datamigratie van de Raspberry Pi tussen alle subsystemen. De lichtsensoren meten een bepaald aantal lux en het LED controller system verstuurt dit als string. De "water related" sensoren zijn PH, temperatuur en water level. De camera neemt periodiek een aantal foto's die naar het NodeRED systeem worden doorgestuurd. De LEDs worden aangestuurd met simpele on/off signalen naar het betreffende level. De stappenmotoren krijgen een bestemming aan. De Pi stuurt de nodige data om alles aan te sturen.
 
+
 ## Beschrijving van eventuele impact op de huidige infrastructuur
+
+### Op hardware niveau
+
+- De kasten gaan aanpassingen krijgen om de kabels goed weg te steken.
+- Alle PCB's zullen opnieuw gemaakt worden.
+- Alle microcontroller's zullen veranderd worden naar ESP32.
+
+### Op software niveau
+
+- De Pi webserver moet genoeg opslag hebben om de foto's op te slagen.
+- De NodeRED pagina moet de motoren kunnen laten zien.
+- De gebruiker moet het xy systeem manueel kunnen laten rondgaan.
+
+
 ## Analyse van security en eventuele autorisatierollen
+
+Op basis van security kunnen wij niet veel aanpassen. Het WiFi netwerk waar data over wordt verstuurd is beveiligd en de Pi webserver is enkel op afstand toegankelijk via het NodeRED interface. 
+
+De security zou verbeterd kunnen worden door bijvoorbeeld een aantal logins te bewaren om het interface van de kast achter een passwoord te steken.
+Het loginsysteem kan dan bijvoorbeeld admin rollen, read only rollen en read/write rollen bevatten.
+
+
 ## Documentatie
+
+- In de code worden regels voorzien van nodige en nuttige commentaar. Dan kan men deze makkelijk lezen en/of aanpassen.
+- Er wordt na finale werking een handleiding opgesteld voor toekomstige gebruikers.
+
+
 ## Bronvermelding
+
+[1]:
+Wimme, D. G., & Leander, L., & Andres, D. (2021).
+https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Probleemstelling?id=deelproblemen
+
+[2]:
+Wimme, D. G., & Leander, L., & Andres, D. (2021).
+https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Modular/kast
+
+[3]:
+Wimme, D. G., & Leander, L., & Andres, D. (2021).
+https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen
+
+[4]:
+Wimme, D. G., & Leander, L., & Andres, D. (2021).
+https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen
