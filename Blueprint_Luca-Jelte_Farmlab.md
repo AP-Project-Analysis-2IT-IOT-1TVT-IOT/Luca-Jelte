@@ -325,10 +325,9 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type string zijn.
 
 | HTTP        |MQTT   |
 | ----------- | ----------- |
-| Vrij zwaar protocol: de header van een package is al groter dan 1 bericht van MQTT
-(min +- 26 bytes header vs enkele bytes MQTT message) | Weinig data → meer keuzes op fysieke laag, trage links worden mogelijk |
+| Vrij zwaar protocol: de header van een package is al groter dan 1 bericht van MQTT (min +- 26 bytes header vs enkele bytes MQTT message) | Weinig data → meer keuzes op fysieke laag, trage links worden mogelijk |
 | Software stack / Software stack / Library Library is vrij zwaar heeft een zeer kleine footprint | Lightweight → protocol last ook in kleine devices, sensors.. met weinig geheugen & cpu power. |
-| Geen ingebouwde Standaard enkele QoS mogelijkheden| Standardisatie, compatibilieit → elk device kan hetzelfde protocol gebruiken → MQTT bouwt verder op de TCP/IP stack|
+| Geen ingebouwde Standaard enkele QoS mogelijkheden| Standaardisatie, compatibilieit → elk device kan hetzelfde protocol gebruiken → MQTT bouwt verder op de TCP/IP stack |
 | | Vereenvoudiging → bij complexe configuraties (zie principe MQTT) |
 
 => Wij gaan gebruik maken van MQTT omdat dit protocol gemaakt is om kleinere bytes aan data door te sturen en dit makkelijk te implementeren is in onze opstelling.
@@ -352,7 +351,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type string zijn.
 => Wij gaan Node-Red gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van ons project (Thingsboard zou te uitgebreid zijn)
 
 ## Beschrijving van de mogelijke interfaces
-![image](https://raw.githubusercontent.com/AP-Project-Analysis-2IT-IOT-1TVT-IOT/Luca-Jelte/main/BlokDiagrammen/DFD%20interface.png)
+![image](https://github.com/AP-Project-Analysis-2IT-IOT-1TVT-IOT/Luca-Jelte/blob/main/BlokDiagrammen/DFD%20interface.png)
 
 In bovenstaand dataflow diagram zien we het interface en de flow van data tussen zichzelf en alle subsystemen. Via het node red interface kan men alle binnenkomende data bekijken op een makkelijke en gebruiksvriendelijke manier. Men kan ook de uitgaande data op bepaalde manieren manipuleren. Bijvoorbeeld het XY-systeem manueel laten langsgaan om foto's te maken.
 
