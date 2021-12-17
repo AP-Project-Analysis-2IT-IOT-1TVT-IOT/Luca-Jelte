@@ -351,7 +351,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type string zijn.
 => Wij gaan Node-Red gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van ons project (Thingsboard zou te uitgebreid zijn)
 
 ## Beschrijving van de mogelijke interfaces
-![image](https://github.com/AP-Project-Analysis-2IT-IOT-1TVT-IOT/Luca-Jelte/blob/main/BlokDiagrammen/DFD%20interface.png)
+![image](https://raw.githubusercontent.com/AP-Project-Analysis-2IT-IOT-1TVT-IOT/Luca-Jelte/main/BlokDiagrammen/DFD%20interface.png)
 
 In bovenstaand dataflow diagram zien we het interface en de flow van data tussen zichzelf en alle subsystemen. Via het node red interface kan men alle binnenkomende data bekijken op een makkelijke en gebruiksvriendelijke manier. Men kan ook de uitgaande data op bepaalde manieren manipuleren. Bijvoorbeeld het XY-systeem manueel laten langsgaan om foto's te maken.
 
