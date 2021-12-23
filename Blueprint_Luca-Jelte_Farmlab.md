@@ -10,14 +10,14 @@ Maarten Luyts: Productowner en projectbegeleider.
 
 ## Samenvatting
 
-Het Farmlab is een project voor IoT studenten van het 2e jaar. Er wordt verder gebouwd op vorige iteraties. *Momenteel bouwen wij verder op de vierde iteratie. 
+Het Farmlab is een project voor IoT studenten van het 2e jaar. Er wordt verder gebouwd op vorige iteraties. *Momenteel wordt er verder gebouwd op de vierde iteratie. 
 
 Het Farmlab is een kast met 3 niveau’s. Op elk niveau groeien planten via hydrocultuur. Dit houd in dat de wortels van de planten niet in de grond zitten, maar direct in water liggen. Doormiddel van voedingsstoffen in het water kunnen ze verder groeien. Op deze wijze kan men landbouw in de hoogte uitbreiden.
 
 De onderdelen van de kast worden volledig geautomatiseerd zodat ze remote kunnen worden gecontroleerd, bestuurd en gescheduled.
 ## Situatie As-Is
 
-Momenteel werken we aan de vierde iteratie van de kast. Al de documentatie van de vorige groepen/iteraties kan men hier vinden:
+Momenteel wordt er gewerkt aan de vierde iteratie van de kast. Al de documentatie van de vorige groepen/iteraties kan men hier vinden:
 
 - https://github.com/jp19-lafa/Documentation/wiki
 - https://ap-it-gh.github.io/lf-xy1-docs/#/ | https://ap-it-gh.github.io/lf-xy2-docs/#/
@@ -148,7 +148,7 @@ Deze onderdelen worden in het technisch design verder uitgepunt.
 [2]
 
 ### Buis Support versie 3
-V3 is momenteel het finale design van onze supports. Na het monteren van de V2's zijn we op enkele problemen gestoten tijdens het monteren van de supports en de buizen. De volgende 2 aanpassingen zorgen ervoor dat de montage makkelijker gaat. Zoals bij V2 word V3 ook verticaal geprint en is er nood aan supports.
+V3 is momenteel het finale design van de supports. Na het monteren van de V2's zijn er enkele problemen gevonden tijdens het monteren van de supports en de buizen. De volgende 2 aanpassingen zorgen ervoor dat de montage makkelijker gaat. Zoals bij V2 word V3 ook verticaal geprint en is er nood aan supports.
 - De verbreding van de poten aan de onderkant zorgen ervoor dat tijdens het monteren van de supports aan het hout met vijzen deze makkelijker bereikbaar zijn.
 - De toevoeging van uitsparingen voor M4 moeren in het onderste gedeelte zorgen ervoor dat de moeren in de print vastgezet kunnen worden.
 [3]
@@ -197,7 +197,7 @@ Versie 4 is anders gebouwd dan de vorige versies en is ook de eind versie voor d
 
 - Bedrade communicatie willen we enkel voor zeer korte afstanden gebruiken of indien er geen ander optie is.
 - Draadloze communicatie gaan we gebruiken voor het grootste deel van het project, het geeft ons de meeste uitbreidmogelijkheden en zorgt dat alles overzichtelijk blijft.
-Verder hebben we gekozen voor WiFi. Deze biedt de meest betrouwbare communicatie voor meer dan 12 devices. Aangezien we volgens een main controller / node systeem willen werken is dit essentieel.
+Verder is er gekozen voor WiFi. Deze biedt de meest betrouwbare communicatie voor meer dan 12 devices. Aangezien er volgens een main controller / node systeem wordt gewerkt is dit essentieel.
 
 ### Keuze voeding
 
@@ -209,7 +209,7 @@ Verder hebben we gekozen voor WiFi. Deze biedt de meest betrouwbare communicatie
 
 **Onze keuze:**
 
-We gaan voor 'the best of both worlds'. Dit houdt in dat we elke controller zo draadloos mogelijk willen bouwen, dus met behulp van batterijen. We voorzien wel steeds een backup aansluiting voor bekabelde voeding.
+Er wordt gegaan voor 'the best of both worlds'. Dit houdt in dat er voor elke controller zo draadloos mogelijk wordt gebouwt, dus met behulp van batterijen. Er wordt wel steeds een backup aansluiting voorzien voor bekabelde voeding.
 
 ### Batterij keuze
 
@@ -221,7 +221,7 @@ We gaan voor 'the best of both worlds'. Dit houdt in dat we elke controller zo d
 
 **Onze keuze:**
 
-Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebben we gekozen voor de Lithium Ion batterij. Deze zouden we ook zonder houder kunnen bevestigen aan de PCB. De 18650 batterijen daarentegen nemen onnodig veel plek in.
+Aangezien er voor de sensor geen grote capaciteit of vermogen nodig is, is er gekozen voor de Lithium Ion batterij. Deze zou ook zonder houder kunnen bevestigen worden aan de PCB. De 18650 batterijen daarentegen nemen onnodig veel plek in.
 
 
 ### Analyse LEDController
@@ -247,7 +247,7 @@ Aangezien we voor de sensor geen grote capaciteit of vermogen nodig hebben, hebb
 | [TSL2591](https://shop.mchobby.be/en/environnemental-press-temp-hum-gas/1599-tsl2591-sensor-lux-luminosite-lumiere-digital-3232100015999-adafruit.html) | 188µ | 	88000 |3,3-5V | I2C |  	8,69€ |
 |[TSL2591](https://www.kiwi-electronics.nl/nl/si1145-digital-uv-index-ir-visible-light-sensor-1574) | NaN | NaN | 3-5V | I2C | 11,99€ |
 
-De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
+De 'TSL2561' geeft de nodige accuraatheid voor een schappelijke prijs.
 
 
 ### Analyse PompController
@@ -275,7 +275,7 @@ De 'TSL2561' geeft ons de nodige accuraatheid voor een schappelijke prijs.
 | SHT31-DIS-B | -40 | 125 | 0.2 | 2.15 | 5.5 | SMD reflow | apart | 4,5 |
 
 
-De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan onze belangrijkste eisen. Voldoende range van meetbare temperaturen en minder dan 1°C accuraatheid. Extra accuraatheid zouden we kunnen bekomen met de 'SHT31-DIS-B', deze kunnen we echter in de beginfases niet gebruiken omdat deze enkel met SMD reflow op een PCB geplaatst kan worden. Deze methode is vrij duur omdat deze stencils nodig heeft en dit niet ideaal is in de test/ontwerp fase. 
+De 'HIH6130-021-001' temperatuur en vochtigheidssensor voldoet aan de belangrijkste eisen. Voldoende range van meetbare temperaturen en minder dan 1°C accuraatheid. Extra accuraatheid zouden kunnen bekomen worden met de 'SHT31-DIS-B', deze kan echter in de beginfases niet gebruikt worden omdat deze enkel met SMD reflow op een PCB geplaatst kan worden. Deze methode is vrij duur omdat deze stencils nodig heeft en dit niet ideaal is in de test/ontwerp fase. 
 
 
 ### Analyse WaterSensor
@@ -330,7 +330,7 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type string zijn.
 | Geen ingebouwde Standaard enkele QoS mogelijkheden| Standaardisatie, compatibilieit → elk device kan hetzelfde protocol gebruiken → MQTT bouwt verder op de TCP/IP stack |
 | | Vereenvoudiging → bij complexe configuraties (zie principe MQTT) |
 
-=> Wij gaan gebruik maken van MQTT omdat dit protocol gemaakt is om kleinere bytes aan data door te sturen en dit makkelijk te implementeren is in onze opstelling.
+=> Er gaat gebruik worden gemaakt van MQTT omdat dit protocol gemaakt is om kleinere bytes aan data door te sturen en dit makkelijk te implementeren is in de opstelling.
 
 ### IOT Dashboard/Platform
 
@@ -348,17 +348,17 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type string zijn.
 | Supports MQTT out of the box | Supports MQTT out of the box | Does not support MQTT out of the box (Not actively developed Plugin available) |
 | Makkelijk om snel data te kunnen verwerken naar een dashboard aan de hand van flows | Eerder gemaakt voor professionele klanten, werkt met verschillende entities voor apparaten en klanten. |  |
 
-=> Wij gaan Node-Red gebruiken omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van ons project (Thingsboard zou te uitgebreid zijn)
+=> Er wordt Node-Red gebruikt omdat dit ingebouwde MQTT support heeft (Wat Freeboard.io niet heeft) en omdat dit op maat is van het project (Thingsboard zou te uitgebreid zijn)
 
 ## Beschrijving van de mogelijke interfaces
 ![image](https://raw.githubusercontent.com/AP-Project-Analysis-2IT-IOT-1TVT-IOT/Luca-Jelte/main/BlokDiagrammen/DFD%20interface.png)
 
-In bovenstaand dataflow diagram zien we het interface en de flow van data tussen zichzelf en alle subsystemen. Via het node red interface kan men alle binnenkomende data bekijken op een makkelijke en gebruiksvriendelijke manier. Men kan ook de uitgaande data op bepaalde manieren manipuleren. Bijvoorbeeld het XY-systeem manueel laten langsgaan om foto's te maken.
+In bovenstaand dataflow diagram ziet men het interface en de flow van data tussen zichzelf en alle subsystemen. Via het node red interface kan men alle binnenkomende data bekijken op een makkelijke en gebruiksvriendelijke manier. Men kan ook de uitgaande data op bepaalde manieren manipuleren. Bijvoorbeeld het XY-systeem manueel laten langsgaan om foto's te maken.
 
 ## Beschrijving van eventuele datamigratie
 ![image](https://raw.githubusercontent.com/AP-Project-Analysis-2IT-IOT-1TVT-IOT/Luca-Jelte/main/BlokDiagrammen/dataflow.drawio.png)
 
-In bovenstaand dataflow diagram zien we de datamigratie van de Raspberry Pi tussen alle subsystemen. De lichtsensoren meten een bepaald aantal lux en het LED controller system verstuurt dit als string. De "water related" sensoren zijn PH, temperatuur en water level. De camera neemt periodiek een aantal foto's die naar het NodeRED systeem worden doorgestuurd. De LEDs worden aangestuurd met simpele on/off signalen naar het betreffende level. De stappenmotoren krijgen een bestemming aan. De Pi stuurt de nodige data om alles aan te sturen.
+In bovenstaand dataflow diagram ziet men de datamigratie van de Raspberry Pi tussen alle subsystemen. De lichtsensoren meten een bepaald aantal lux en het LED controller system verstuurt dit als string. De "water related" sensoren zijn PH, temperatuur en water level. De camera neemt periodiek een aantal foto's die naar het NodeRED systeem worden doorgestuurd. De LEDs worden aangestuurd met simpele on/off signalen naar het betreffende level. De stappenmotoren krijgen een bestemming aan. De Pi stuurt de nodige data om alles aan te sturen.
 
 
 ## Beschrijving van eventuele impact op de huidige infrastructuur
@@ -378,7 +378,7 @@ In bovenstaand dataflow diagram zien we de datamigratie van de Raspberry Pi tuss
 
 ## Analyse van security en eventuele autorisatierollen
 
-Op basis van security kunnen wij niet veel aanpassen. Het WiFi netwerk waar data over wordt verstuurd is beveiligd en de Pi webserver is enkel op afstand toegankelijk via het NodeRED interface. 
+Op basis van security kan er niet veel worden aangepast. Het WiFi netwerk waar data over wordt verstuurd is beveiligd en de Pi webserver is enkel op afstand toegankelijk via het NodeRED interface. 
 
 De security zou verbeterd kunnen worden door bijvoorbeeld een aantal logins te bewaren om het interface van de kast achter een passwoord te steken.
 Het loginsysteem kan dan bijvoorbeeld admin rollen, read only rollen en read/write rollen bevatten.
