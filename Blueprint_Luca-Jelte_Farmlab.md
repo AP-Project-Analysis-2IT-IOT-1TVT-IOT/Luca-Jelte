@@ -355,6 +355,15 @@ Alle data die tussen deze 2 uitgestuurd worden zullen van het type string zijn.
 
 In bovenstaand dataflow diagram ziet men het interface en de flow van data tussen zichzelf en alle subsystemen. Via het node red interface kan men alle binnenkomende data bekijken op een makkelijke en gebruiksvriendelijke manier. Men kan ook de uitgaande data op bepaalde manieren manipuleren. Bijvoorbeeld het XY-systeem manueel laten langsgaan om foto's te maken.
 
+### NodeRED Editor View
+![image](https://user-images.githubusercontent.com/91600019/146913720-16b7405d-04fb-4f1d-abab-c27d51c1804f.png)
+[5]
+
+### NodeRED UI
+![image](https://user-images.githubusercontent.com/91600019/146913785-c37c27c9-7c5a-4eb9-8020-5b3c3a8c6749.png)
+[5]
+
+
 ## Beschrijving van eventuele datamigratie
 ![image](https://raw.githubusercontent.com/AP-Project-Analysis-2IT-IOT-1TVT-IOT/Luca-Jelte/main/BlokDiagrammen/dataflow.drawio.png)
 
@@ -378,10 +387,22 @@ In bovenstaand dataflow diagram ziet men de datamigratie van de Raspberry Pi tus
 
 ## Analyse van security en eventuele autorisatierollen
 
-Op basis van security kan er niet veel worden aangepast. Het WiFi netwerk waar data over wordt verstuurd is beveiligd en de Pi webserver is enkel op afstand toegankelijk via het NodeRED interface. 
+Op basis van security kan er niet veel worden aangepast. Het WiFi netwerk waar data over wordt verstuurd is beveiligd en de Pi webserver is enkel op afstand toegankelijk via het NodeRED interface. Men moet op het lokale netwerk kunnen inloggen om dit te bereiken.
 
 De security zou verbeterd kunnen worden door bijvoorbeeld een aantal logins te bewaren om het interface van de kast achter een passwoord te steken.
-Het loginsysteem kan dan bijvoorbeeld admin rollen, read only rollen en read/write rollen bevatten.
+Het loginsysteem kan dan bijvoorbeeld admin rollen, read only rollen en read/write rollen bevatten. Deze worden hieronder licht uitgelegd.
+
+#### Eventuele autorisatierollen:
+
+##### Admin
+- Heeft rechten om alles aan te passen.
+-	Beveiligd met wachtwoord.
+-	Kan het automatisatieproces aanpassen via parameters.
+
+##### Standaard Gebruiker
+-	Kan alles zien maar niets aanpassen/beïnvloeden.
+-	Geen toegang tot knoppen of andere invoer.
+-	Kan het automatisatieproces niet beïnvloeden.
 
 
 ## Documentatie
@@ -407,3 +428,7 @@ https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ont
 [4]:
 Wimme, D. G., & Leander, L., & Andres, D. (2021).
 https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/Hardware_analyse/3D-Ontwerpen
+
+[5]:
+Wimme, D. G., & Leander, L., & Andres, D. (2021).
+https://ap-it-gh.github.io/ssys21-docs-labfarm/#/MDFiles/SoftwareGuide
