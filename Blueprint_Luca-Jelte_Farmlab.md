@@ -394,12 +394,12 @@ Het loginsysteem kan dan bijvoorbeeld admin rollen, read only rollen en read/wri
 
 #### Eventuele autorisatierollen:
 
-##### Admin
+#### Admin
 - Heeft rechten om alles aan te passen.
 -	Beveiligd met wachtwoord.
 -	Kan het automatisatieproces aanpassen via parameters.
 
-##### Standaard Gebruiker
+#### Standaard Gebruiker
 -	Kan alles zien maar niets aanpassen/beïnvloeden.
 -	Geen toegang tot knoppen of andere invoer.
 -	Kan het automatisatieproces niet beïnvloeden.
